@@ -16,8 +16,8 @@ class Tests(TestCase):
 
     def test_FilmsView(self):
         response = self.client.get('')
-        self.assertEquals(response.status_code, 200)
+        self.assertEqual(response.status_code, 200)
 
     def test_GenreView(self):
         response = self.client.get(self.genre.get_absolute_url())
-        self.assertEquals(response.status_code, 200)
+        self.assertEqual(response.status_code, 200)
